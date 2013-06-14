@@ -41,7 +41,7 @@ light 0 diffuse 1.0 1.0 1.0
 # set up the output image files
 tiff_iter 10
 tiff_max 100000
-tiff_name bathtub50S
+tiff_name images/bathtub50S
 
 
 dim 3
