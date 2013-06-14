@@ -1,0 +1,4 @@
+# git ignore
+*.tif
+data_*.txt
+

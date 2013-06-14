@@ -1,0 +1,133 @@
+# Simulation file of basic diffusion and reaction
+# This file is used to test and demonstrate the movesurfacemol command
+
+# model bathtub process in a box.  no cells or chromosomes
+# start simple
+
+# add precursor very rapidly in attempt to overload the source
+# if simulation of source is as I hope, then precursor number will
+# grow to infinity
+
+# average human cell has diamter of 10 microns/10,000 nm
+# use nm-mirosecond scale
+#
+
+graphics opengl_better
+graphic_iter 10
+
+light 0 position 100 200 300
+#light 0 ambient 1.0 1.0 1.0
+light 0 diffuse 1.0 1.0 1.0
+#light 0 specular 1.0 1.0 1.0
+
+# set up the output image files
+#tiff_iter 10
+#tiff_max 100000
+#tiff_name bathtubtwo
+
+
+dim 3
+boxsize 50
+
+species precursor cell_killer source drain neutral
+
+# harmless precursor (prodrug) is green
+color precursor 0 1 0
+# use red for cell killer
+color cell_killer 1 0 0
+# use blue for sources (telomere)
+color source 0 0 1
+# use magenta for drains
+color drain 1 0 1
+# use black for neutralized cell killer
+color neutral 0 0 0
+
+# time unit is microseconds  (nm-usec or um-msec)
+
+time_start 0
+time_stop 1000000
+
+# simulation time step (smoldyn has severl other time step commands)
+time_step 1
+
+#diffusion coefficients in nm^2/microsecond
+# typical value is 10 nm^2/microsecond
+
+difc precursor 10
+difc cell_killer 10
+# sources and drains
+difc source 10.0
+difc drain 10.0
+difc neutral 10.0
+
+# size of molecules rendered on screen (in nm in this case)
+
+display_size all 1  # make molecules way too large to see easily
+
+# average human cell diamter is 10 microns/10,000 nm
+
+# zoom in on region 0 to 100 where there would be about 100 molecules
+
+boundaries 0 0 100
+boundaries 1 0 100
+boundaries 2 0 100
+
+# box 100 nm on each side
+
+max_surface 2
+start_surface walls
+action both all reflect
+polygon both none
+max_panels rect 6
+panel rect +0 0 0 0 100 100
+panel rect -0 100 0 0 100 100
+panel rect +1 0 0 0 100 100
+panel rect -1 0 100 0 100 100
+panel rect +2 0 0 0 100 100
+panel rect -2 0 0 100 100 100
+end_surface
+
+
+# put drains and sources everywhere for now
+mol 100 drain u u u 
+mol 200 source u u u
+
+# mol number_mols name  u is uniform between bounding walls
+#
+
+# typical concentration is 6 X 10^-6 nm^3
+
+# volume of box is 10^12 nm^3  (zoomed to 10^6 sub-region)
+
+# actual number of precusor in cell might be 6 x 10^6 molecules
+# 0 to 100 nm sub-region would have about 181 molecules   
+
+#mol 181 precursor u u u
+
+# reactions
+
+# unimolecular reactions have a typical value of 10^-6 sec^-1
+# bimolecular reactions have a typical value of 0.17 nm^3 musec^-1
+
+# zeroth order reaction that adds precursor to the volume
+reaction treatment 0 -> precursor
+
+# average number of precursor added to volume per time step
+reaction_production treatment 0.1
+
+
+#reaction pre_decay precursor -> 0 0.0000000001
+
+reaction activation precursor + source -> cell_killer + source 0.2
+reaction neutralize cell_killer + drain -> neutral + drain 0.2
+
+# decay or excretion of the neutralized cell killer
+reaction decay neutral -> 0 0.1 # remove 1/second (10/msec)
+
+output_files data_bathtub_simple_200_pre.txt
+cmd b molcountheader data_bathtub_simple_200_pre.txt
+
+cmd n 1 molcount data_bathtub_simple_200_pre.txt
+
+end_file
+
