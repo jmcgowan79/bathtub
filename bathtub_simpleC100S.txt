@@ -95,7 +95,7 @@ color neutral 0 0 0
 # time unit is microseconds  (nm-usec or um-msec)
 
 time_start 0
-time_stop 100000  # simulate for 10 seconds (grows slowly til at least 3 sec)
+time_stop 10000000  # simulate for 10 seconds (grows slowly til at least 3 sec)
 
 
 # simulation time step (smoldyn has severl other time step commands)
