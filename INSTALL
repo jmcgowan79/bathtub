@@ -15,4 +15,11 @@ bash$ smoldyn smoldyn_script.txt
 
 to run the simulation.
 
+
+3.  Use ffmpeg to convert image sequence to a video/movie file
+     o  bash$  ffmpeg -i filestem%06d.tif filestem.mp4
+
+4.  Can use vlc video player to view the mp4 files if native video player (e.g. QuickTime) does not work.
+
+
 ###
