@@ -21,5 +21,7 @@ to run the simulation.
 
 4.  Can use vlc video player to view the mp4 files if native video player (e.g. QuickTime) does not work.
 
+5.  To run the Octave *.m scripts, need to download and install Octave (a free numerical program that is mostly compatible with MATLAB) from http://www.gnu.org/software/octave/
+
 
 ###
