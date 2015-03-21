@@ -6,4 +6,8 @@ Author/Point of Contact: John F. McGowan, Ph.D. (jmcgowan79@gmail.com)
 
 
 
+bash$ cd images; ffmpeg -i bathtubtwo%06d.tif bathtub_simple.mp4
+
+This mp4 file could not be played with QuickTime, but vlc media player can play it.
+
 
