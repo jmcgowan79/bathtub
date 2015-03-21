@@ -22,7 +22,7 @@ light 0 diffuse 1.0 1.0 1.0
 # set up the output image files
 tiff_iter 10
 tiff_max 100000
-tiff_name images/bathtubtwo
+tiff_name images/bathtub_simpleC10S
 
 
 dim 3
@@ -178,10 +178,10 @@ reaction decay neutral -> 0 0.1 # remove 1/second (10/msec)
 
 # OUTPUT FILES AND DATA
 
-output_files data_bathtub_simpleC10S.txt
-cmd b molcountheader data_bathtub_simpleC10S.txt
+output_files data_bathtub_simpleC10S_images.txt
+cmd b molcountheader data_bathtub_simpleC10S_images.txt
 
-cmd n 1 molcount data_bathtub_simpleC10S.txt
+cmd n 1 molcount data_bathtub_simpleC10S_images.txt
 
 end_file
 
