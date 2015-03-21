@@ -1,0 +1,18 @@
+Installation Instructions for Bathtub Mechanism Simulation Code
+
+Author/Point of Contact: John F. McGowan, Ph.D. (jmcgowan79@gmail.com)
+
+1.  Need to install smoldyn from http://www.smoldyn.org
+       o Need to install CMake build system to build smoldyn from sources
+       o On Mac, can use MacPorts (sudo port install xxx) to install dependencies
+       o  -- may need to install tiff, and freeglut
+       o       sudo port install tiff
+       o       sudo port install freeglut
+
+2.  Then run:
+
+bash$ smoldyn smoldyn_script.txt
+
+to run the simulation.
+
+###
