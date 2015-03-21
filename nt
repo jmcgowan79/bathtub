@@ -1,0 +1,4 @@
+#!/bin/bash
+# notebook command for Mac OS X (uses bash script)
+vim + notebook.txt
+
