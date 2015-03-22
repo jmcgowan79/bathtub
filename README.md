@@ -1,6 +1,3 @@
-bathtub
-=======
-
 The Bathtub Mechanism (Cancer Research Project)
 
 Cancer cells frequently, perhaps always in some cases, have an
