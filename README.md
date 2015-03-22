@@ -44,6 +44,12 @@ http://math-blog.com/2011/10/07/tackling-cancer-with-math/
 http://math-blog.com/2011/10/31/animations-of-a-possible-cure-for-cancer/
 
 
+Smoldyn Configuration Files
+
+bathtub_simpleC_10S.txt   -- ten sources, 100 drains simulate
+bathtub_simpleC_NNS.txt   -- NN Sources, 100 drains simulate
+
+
 About the Author
 
 John F. McGowan, Ph.D. solves problems using mathematics and
