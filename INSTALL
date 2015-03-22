@@ -11,6 +11,10 @@ Author/Point of Contact: John F. McGowan, Ph.D. (jmcgowan79@gmail.com)
 
 2.  Then run:
 
+bash$ make  # to run the simulations
+
+or you can run each simulation manually yourself:
+
 bash$ smoldyn smoldyn_script.txt
 
 to run the simulation.
