@@ -19,10 +19,10 @@ of chromosomes is known as aneuploidy.
 The Bathtub Mechanism works in analogy to an old-fashioned bathtub
 with two faucets and a single drain with a limited capacity.  Turn on
 one faucet full and the drain will be able to remove the water as it
-is added.  The water level in the bathtub remains low, less than an
-inch.  Turn on both faucets full and the drawin will not be able to
-remove the water as it is added, the water level rises and the bathtub
-overflows.
+is added.  The water level in the bathtub remains low, less than a
+half-inch or a centimeter.  Turn on both faucets full and the drain
+will not be able to remove the water as it is added, the water level
+rises and the bathtub overflows.
 
 In the Bathtub Mechanism, each chromosome is a "faucet" adding a mild
 toxin to the cell -- ideally a chemical that is not toxic in low
@@ -37,6 +37,14 @@ remove the toxin rapidly enough.
 This project contains simulation software for the Bathtub Mechanism.
 
 Author/Point of Contact: John F. McGowan, Ph.D. (jmcgowan79@gmail.com)
+
+
+Articles on the Bathtub Mechanism
+
+http://math-blog.com/2011/07/11/can-mathematics-cure-cancer/
+http://math-blog.com/2011/10/07/tackling-cancer-with-math/
+http://math-blog.com/2011/10/31/animations-of-a-possible-cure-for-cancer/
+
 
 About the Author
 
