@@ -12,7 +12,14 @@ CD=cd   # change directory (folder)
 FFMPEG=ffmpeg  # ffmpeg video encoder tool to make mp4 (MPEG-4) video files (www.ffmpeg.org)
 DATAFILES=data_bathtub_simpleC10S.txt \
 data_bathtub_simpleC50S.txt \
-data_bathtub_simpleC100S.txt
+data_bathtub_simpleC100S.txt \
+data_bathtub_simpleC110S.txt \
+data_bathtub_simpleC120S.txt \
+data_bathtub_simpleC130S.txt \
+data_bathtub_simpleC150S.txt \
+data_bathtub_simpleC200S.txt \
+data_bathtub_simpleC90S.txt
+
 
 IMAGEFILES=data_bathtub_simpleC10S_images.txt
 
