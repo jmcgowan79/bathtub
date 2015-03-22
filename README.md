@@ -17,12 +17,13 @@ number -- around eighty to ninety chromosomes.  This abnormal number
 of chromosomes is known as aneuploidy.
 
 The Bathtub Mechanism works in analogy to an old-fashioned bathtub
-with two faucets and a single drain with a limited capacity.  Turn on
-one faucet full and the drain will be able to remove the water as it
-is added.  The water level in the bathtub remains low, less than a
-half-inch or a centimeter.  Turn on both faucets full and the drain
-will not be able to remove the water as it is added, the water level
-rises and the bathtub overflows.
+with two faucets and a single drain with a limited capacity.
+Old-fashioned bathtubs often had two faucets, one for the hot water
+and one for the cold water.  Turn on one faucet full and the drain
+will be able to remove the water as it is added.  The water level in
+the bathtub remains low, less than a half-inch or a centimeter.  Turn
+on both faucets full and the drain will not be able to remove the
+water as it is added, the water level rises and the bathtub overflows.
 
 In the Bathtub Mechanism, each chromosome is a "faucet" adding a mild
 toxin to the cell -- ideally a chemical that is not toxic in low
